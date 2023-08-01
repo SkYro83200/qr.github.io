@@ -1,0 +1,53 @@
+body
+{
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(212, 45%, 89%);
+}
+
+/* Styles de base pour la carte */
+.card {
+    background-color: hsl(0, 0%, 100%);
+    border: 1px solid hsl(0, 0%, 95%);
+    border-radius: 30px;
+    max-width: 400px; /* Utilisation d'une largeur maximale pour la carte */
+    width: 100%;
+    height: 600px;
+    margin: auto; /* Utilisation de margin:auto pour centrer horizontalement et verticalement */
+    padding: 15px; /* Utilisation de padding en pixels plutôt qu'en pourcentage */
+    box-shadow: 0 0 10px hsl(0, 0%, 49%);
+  
+    /* Centrer verticalement */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.card img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.card h1 {
+    font-size: 2rem;
+    /* Center the text */
+    text-align: center;   
+}
+
+.card p {
+    font-size: 1.2rem;
+    /* Center the text */
+    text-align: center;   
+}
+
+
+/* Styles pour les écrans plus petits (par exemple, les smartphones en mode portrait) */
+@media screen and (max-width: 480px) {
+    .card {
+      max-width: 80%; /* La carte occupera 100% de la largeur de l'écran */
+      padding: 10px; /* Réduction du padding pour s'adapter à de petits écrans */
+    }
+}
